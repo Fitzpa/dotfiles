@@ -69,6 +69,13 @@ if command -v direnv >/dev/null 2>&1; then
   eval "$(direnv hook bash)"
 fi
 
+# Worktrunk aliases
+alias wtc='wt --switch create'
+alias wts='wt --switch'
+alias wtl='wt list'
+alias wtr='wt remove'
+alias wtcom='wt step commit'
+
 # Core aliases
 if command -v bat >/dev/null 2>&1; then
   alias cat='bat'
